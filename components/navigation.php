@@ -7,7 +7,7 @@ x-data="{open:false, menu:false, lokasi:false}">
       <div class="relative flex items-center justify-between h-16">
         <div class="flex items-center px-2 lg:px-0">
           <a class="flex-shrink-0" href="<?= ROOT_DIR ?>">
-          <img src="../../assets/images/LTC.png"/>
+          <img src="<?= ROOT_DIR ?>assets/images/LTC.png"/>
           </a>
           <div class="hidden lg:block lg:ml-2">
             <div class="flex">
@@ -56,6 +56,7 @@ x-data="{open:false, menu:false, lokasi:false}">
         </div>
       </div>
     </div>
+    
     <div x-show="menu" class="block md:hidden">
       <div class="px-2 pt-2 pb-3">
       <?php if (!isset($_SESSION['loggedin'])): ?>
