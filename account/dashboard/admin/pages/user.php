@@ -141,37 +141,21 @@ $users->bind_result($userID, $userName, $userEmail, $userActive);
             </buttn>
             <?php if ($userActive == 1): ?>
             <button onclick="window.location.href='../config/deactivateUser.php?uid=<?= $userID ?>';">
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                fill="none" 
-                viewBox="0 0 24 24" 
-                stroke-width="1.5" 
-                stroke="currentColor" 
-                class="w-6 h-6"
-                >
-                <path 
-                  stroke-linecap="round" 
-                  stroke-linejoin="round" 
-                  d="M22 10.5h-6m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" 
-                  />
-              </svg>
+            <input
+                    type="checkbox"
+                    class='relative h-5 w-10 appearance-none rounded-[20px] bg-[#e0e5f2] outline-none transition duration-[0.5s] 
+                    before:absolute before:top-[50%] before:h-4 before:w-4 before:translate-x-[20px] before:translate-y-[-50%] before:rounded-[20px]
+                    before:bg-white before:shadow-[0_2px_5px_rgba(0,_0,_0,_.2)] before:transition before:content-[""]
+                    checked:before:translate-x-[22px] hover:cursor-pointer checked:bg-yellow-500 dark:checked:bg-yellow-400'id="checkbox4" />
             </button>
           <?php elseif ($userActive == 0): ?>
           <button onclick="window.location.href='../config/activateUser.php?uid=<?= $userID ?>';">
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                fill="none" 
-                viewBox="0 0 24 24" 
-                stroke-width="1.5" 
-                stroke="currentColor" 
-                class="w-6 h-6"
-                >
-                <path 
-                  stroke-linecap="round" 
-                  stroke-linejoin="round" 
-                  d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" />
-
-              </svg>
+          <input
+                    type="checkbox"
+                    class='relative h-5 w-10 appearance-none rounded-[20px] bg-[#e0e5f2] outline-none transition duration-[0.5s] 
+                    before:absolute before:top-[50%] before:h-4 before:w-4 before:translate-x-[2px] before:translate-y-[-50%] before:rounded-[20px]
+                    before:bg-white before:shadow-[0_2px_5px_rgba(0,_0,_0,_.2)] before:transition before:content-[""]
+                    checked:before:translate-x-[22px] hover:cursor-pointer checked:bg-brand-500 dark:checked:bg-brand-400'id="checkbox4" />
           </button>
          <?php endif ?>
 
@@ -191,7 +175,6 @@ $users->bind_result($userID, $userName, $userEmail, $userActive);
 
 	</div>
 	<!--/container-->
-
 
 
 

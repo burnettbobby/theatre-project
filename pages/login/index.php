@@ -29,7 +29,7 @@
                     <div class="text-right text-gray-400 hover:underline hover:text-gray-100">
                         <a href="#">Forgot your password?</a>
                     </div>
-                    <div class="px-4 pb-2 pt-4">
+                    <div>
                         <button class="login-button" value="LOGIN" type="submit">sign in</button>
                     </div>
 

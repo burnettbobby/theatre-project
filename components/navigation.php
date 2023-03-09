@@ -2,7 +2,7 @@
 <nav 
 class="z-0 relative" 
 x-data="{open:false, menu:false, lokasi:false}">
-  <div class="relative z-10 bg-black-300 shadow">
+  <div class="relative z-10 bg-gradient-to-r from-stone-50 to-zinc-300">
     <div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
         <div class="flex items-center px-2 lg:px-0">
@@ -11,21 +11,21 @@ x-data="{open:false, menu:false, lokasi:false}">
           <div class="hidden lg:block lg:ml-2">
             <div class="flex">
               <?php if (!isset($_SESSION['loggedin'])): ?>
-                <a href="<?= ROOT_DIR ?>" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-500 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> Home </a>
-                <a href="<?= ROOT_DIR ?>pages/blog/" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-500 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> Blogs </a>
-                <a href="<?= ROOT_DIR ?>pages/login/" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-500 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> Login </a>
-                <a href="<?= ROOT_DIR ?>pages/register/" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-500 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> Register </a>
+                <a href="<?= ROOT_DIR ?>" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-300 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> Home </a>
+                <a href="<?= ROOT_DIR ?>pages/blog/" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-300 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> Blogs </a>
+                <a href="<?= ROOT_DIR ?>pages/login/" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-300 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> Login </a>
+                <a href="<?= ROOT_DIR ?>pages/register/" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-300 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> Register </a>
               <?php else: ?>
-                <a href="<?= ROOT_DIR ?>" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-500 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> Home </a>
-                <a href="<?= ROOT_DIR ?>pages/blog/" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-500 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> Blog </a>
+                <a href="<?= ROOT_DIR ?>" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-300 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> Home </a>
+                <a href="<?= ROOT_DIR ?>pages/blog/" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-300 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> Blog </a>
                     <?php if ($_SESSION['is_admin'] == 1): ?>
-                      <a href="<?= AUTH_DIR ?>admin/pages/pendingComments.php" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-500 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> Pending Reviews </a>
-                      <a href="<?= AUTH_DIR ?>admin/pages/user.php" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-500 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> Users </a>
+                      <a href="<?= AUTH_DIR ?>admin/pages/pendingComments.php" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-300 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> Pending Reviews </a>
+                      <a href="<?= AUTH_DIR ?>admin/pages/user.php" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-300 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> Users </a>
                     <?php elseif ($_SESSION['is_admin'] == 0): ?>
-                      <a href="#" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-500 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> My reviews </a>
-                      <a href="#" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-500 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> My account </a>
-                    <?php endif ?>
-                    <a href="<?= ROOT_DIR ?>account/auth/logout.php" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-500 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> Logout </a>
+                      <a href="#" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-300 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> My reviews </a>
+                      <a href="<?= ROOT_DIR ?>u/dashboard" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-300 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> My account</a>
+                      <?php endif ?>
+                    <a href="<?= ROOT_DIR ?>account/auth/logout.php" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-300 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> Logout </a>
                     <?php endif ?>
             </div>
           </div>
@@ -39,7 +39,7 @@ x-data="{open:false, menu:false, lokasi:false}">
                   <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
                 </svg>
               </button>
-              <input type="text" name="s" id="s" class="block w-full pl-10 pr-3 py-2 border border-transparent rounded-md leading-5 bg-white-200 text-gray-300 placeholder-gray-400 focus:outline-none focus:bg-white focus:text-gray-900 sm:text-sm transition duration-150 ease-in-out" placeholder="Search">
+              <input type="text" name="s" id="s" class="block w-full pl-10 pr-3 py-2 border border-transparent rounded-md leading-5 bg-white-300 text-gray-300 placeholder-gray-400 focus:outline-none focus:bg-yellow-300 focus:text-gray-900 sm:text-sm transition duration-150 ease-in-out" placeholder="Search">
             </form>
           </div>
         </div>
@@ -64,16 +64,16 @@ x-data="{open:false, menu:false, lokasi:false}">
               <?php else: ?>
                 <a href="<?= ROOT_DIR ?>" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-500 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> Home </a>
                 <a href="<?= ROOT_DIR ?>blog/" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-500 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> Blog </a>
-                    <?php if ($_SESSION['is_admin'] == 1): ?>
-                      <a href="#" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-500 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> Pending Reviews </a>
-                      <a href="<?= AUTH_DIR ?>pages/user.php" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-500 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> Users </a>
-                    <?php elseif ($_SESSION['is_admin'] == 0): ?>
-                      <a href="#" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-500 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> My reviews </a>
-                      <a href="#" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-500 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> My account </a>
-                    <?php endif ?>
-                    <a href="<?= ROOT_DIR ?>account/auth/logout.php" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-500 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> Logout </a>
-                    <?php endif ?>
-    </div>
+              <?php if ($_SESSION['is_admin'] == 1): ?>
+                <a href="#" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-500 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> Pending Reviews </a>
+                <a href="<?= AUTH_DIR ?>pages/user.php" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-500 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> Users </a>
+              <?php elseif ($_SESSION['is_admin'] == 0): ?>
+                <a href="#" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-500 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> My reviews </a>
+                <a href="#" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-500 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> My account </a>
+              <?php endif ?>
+              <a href="<?= ROOT_DIR ?>account/auth/logout.php" class="ml-4 px-3 py-2 rounded-md text-sm leading-5 font-medium text-gray-800 hover:bg-yellow-500 hover:text-white transition duration-150 ease-in-out cursor-pointer focus:outline-none focus:text-white focus:bg-gray-700 "> Logout </a>
+              <?php endif ?>
+      </div>
     </div>
   </div>
 </nav>

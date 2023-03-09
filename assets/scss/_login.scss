@@ -5,17 +5,20 @@
     font-size: 2em;
 }
 .login-button{
-    background-color: white;
     padding: 10px;
-    color: #042c65;
-    border-radius: 20px;
+    color: white;
+    border: white solid 1px;
+    border-radius: 10px;
     font-size: 1em;
     text-transform: uppercase;
     width: 33%;
-    font-weight: 700;
+    font-weight: 500;
     font-family: 'Quicksand', sans-serif;
+    margin: 20px;
     &:hover{
-        background-color: #ffec8c;
+        background-color: #fde047;
+        color: black;
+        font-weight: 700;
 
     }
     &:active{
