@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+
+#login-title{
+    font-size: 2em;
+}
+.login-button{
+    background-color: white;
+    padding: 10px;
+    color: #042c65;
+    border-radius: 20px;
+    font-size: 1em;
+    text-transform: uppercase;
+    width: 33%;
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+    &:hover{
+        background-color: #ffec8c;
+
+    }
+    &:active{
+        transform: scale(0.9);
+    }
+  }
+
+  .w-full{
+      text-align: center;
+  }
+
+  h1{
+      font-family: 'Quicksand', sans-serif;
+  }
+
+  input{
+    font-family: 'Quicksand', sans-serif;
+  }
