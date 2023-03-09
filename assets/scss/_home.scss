@@ -1,3 +1,20 @@
 .home-banner{
-    
+    .logo{
+        font-size: 0.6em;
+    }
+    .online{
+        font-size: 1.2em;
+        font-weight: 900;
+        letter-spacing: 0.1em;
+    }
+    .whats-on{
+        font-weight: 300;
+        border-radius: 5px;
+        &:hover{
+            box-shadow: 0 20px 50px rgba(25, 0, 255, 0.7);
+        }
+        &:active{
+            transform: scale(0.9);
+        }
+    }
 }

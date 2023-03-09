@@ -2,11 +2,12 @@
 <nav 
 class="z-0 relative" 
 x-data="{open:false, menu:false, lokasi:false}">
-  <div class="relative z-10 bg-gradient-to-r from-stone-50 to-zinc-300">
+  <div class="relative z-10 ">
     <div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
         <div class="flex items-center px-2 lg:px-0">
           <a class="flex-shrink-0" href="<?= ROOT_DIR ?>">
+          <img src="../../assets/images/LTC.png"/>
           </a>
           <div class="hidden lg:block lg:ml-2">
             <div class="flex">

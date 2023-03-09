@@ -76,6 +76,25 @@ input {
   font-family: "Quicksand", sans-serif;
 }
 
+.home-banner .logo {
+  font-size: 0.6em;
+}
+.home-banner .online {
+  font-size: 1.2em;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+.home-banner .whats-on {
+  font-weight: 300;
+  border-radius: 5px;
+}
+.home-banner .whats-on:hover {
+  box-shadow: 0 20px 50px rgba(25, 0, 255, 0.7);
+}
+.home-banner .whats-on:active {
+  transform: scale(0.9);
+}
+
 nav {
   margin: 20px;
 }/*# sourceMappingURL=app.css.map */
