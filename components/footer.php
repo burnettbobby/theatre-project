@@ -1,5 +1,6 @@
 <!-- component -->
 <section class="bg-black">
+<?php if ($_SESSION['is_admin'] == 0): ?>
        <div
             class="max-w-lg bg-black px-4 pt-24 py-8 mx-auto text-left md:max-w-none md:text-center"
           >
@@ -19,19 +20,28 @@
               </button>
             </div>
           </div>
-  </section>
-  
-<hr class="text-white mx-5" />
-  <footer class="bg-black pb-5">
-  <div class="max-w-screen-xl px-4 pt-8 mx-auto sm:px-6 lg:px-8">
+          <?php elseif ($_SESSION['is_admin'] == 1): ?>
+            <div class="max-w-lg bg-black px-4 pt-24 py-8 mx-auto text-left md:max-w-none md:text-center">     
+              <div class="mx-auto rounded-lg font-black mt-5 text-zinc-400 md:mt-12 md:max-w-lg text-center lg:text-lg">
+                
+
+              </div>
+              <footer class="bg-black pb-5">
+  <div class="max-w-screen-xl px-4 pt-8 mx-auto ">
     <div class="sm:flex sm:items-center sm:justify-between">
       <div class="flex justify-center text-teal-300 sm:justify-start">
-     <img class="rounded-full" src="https://sahilnetic.xyz/evilcat.png" width="40" height="40" />
+          <img class="rounded-full" src="<?= ROOT_DIR ?>assets/images/cat-roof.jfif" width="400" height="400" />
       </div>
-
       <p class="mt-4 text-sm text-center text-gray-400 lg:text-right lg:mt-0">
         T&C &nbsp; Career &nbsp; Privacy & Policy &nbsp; Developers
       </p>
     </div>
   </div>
 </footer>
+            </div>
+     
+       
+          <?php endif ?>
+
+  </section>
+

@@ -2,6 +2,7 @@
 /* Set no margin and padding around body. Set height to take up entire screen height. Align everything to the center, both horizontally and vertically */
 /* Remove border and outline around input. Set width to take up the entire width of parent and set margin on bottom */
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 #searchInput {
   border: none;
   outline: none;
@@ -56,9 +57,10 @@ pre {
   margin: 20px;
 }
 .login-button:hover {
-  background-color: #fde047;
-  color: black;
   font-weight: 700;
+  box-shadow: 0px 0px 16px 0px rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 0px 0px 16px 0px rgba(255, 255, 255, 0.75);
 }
 .login-button:active {
   transform: scale(0.9);
@@ -83,6 +85,7 @@ input {
   font-size: 1.2em;
   font-weight: 900;
   letter-spacing: 0.1em;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .home-banner .whats-on {
   font-weight: 300;
@@ -96,5 +99,75 @@ input {
 }
 
 nav {
-  margin: 20px;
+  padding: 20px;
+  background-color: #f3f4f6;
+}
+nav .logo:hover {
+  transform: scale(1.1);
+}
+nav .logo:active {
+  transform: scale(0.9);
+}
+nav a:hover {
+  -webkit-text-decoration: overline solid 6px #f6de58;
+          text-decoration: overline solid 6px #f6de58;
+}
+nav .search-box:hover {
+  background-color: rgba(246, 222, 88, 0.5137254902);
+}
+nav .search-box:focus {
+  background-color: #f6de58;
+}
+nav .search-box:active {
+  background-color: #f6de58;
+}
+
+.box-1 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.box-1:hover .overlay {
+  opacity: 1;
+}
+
+.box-2 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.box-2:hover .overlay {
+  opacity: 1;
+}
+
+.box-3 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.box-3:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.2s ease;
+  background-color: rgba(0, 0, 0, 0.6470588235);
+}
+.overlay .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
 }/*# sourceMappingURL=app.css.map */

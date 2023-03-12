@@ -1,3 +1,31 @@
 nav{
-    margin: 20px;
+    padding: 20px;
+    background-color: #f3f4f6;
+    .logo{
+        &:hover{
+            transform: scale(1.1);
+        }
+        &:active{
+            transform: scale(0.9);
+        }
+    }
+    a{
+        &:hover{
+        // background-color: #0d00ff;
+        // color: white;
+        text-decoration: overline solid 6px #f6de58;
+        }
+       
+    }
+    .search-box{
+        &:hover{
+        background-color: #f6de5883;
+        }
+        &:focus{
+            background-color: #f6de58;    
+            }
+        &:active{
+        background-color: #f6de58;    
+        }
+    }
 }

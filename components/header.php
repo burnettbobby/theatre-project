@@ -5,8 +5,8 @@
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
     // for use on laptop
-    // define('ROOT_DIR', 'http://localhost:8040/theatreV1/');
-    // define('AUTH_DIR', 'http://localhost:8040//theatreV1/account/dashboard/');
+    // define('ROOT_DIR', 'http://localhost:8040/theatre-project/');
+    // define('AUTH_DIR', 'http://localhost:8040//theatre-project/account/dashboard/');
 // for use on college pc in room 13
     define('ROOT_DIR', 'http://localhost/theatre-project/');
     define('AUTH_DIR', 'http://localhost/theatre-project/account/dashboard/');
@@ -22,10 +22,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0ed3cf">
-    <meta name="msapplication-TileColor" content="#0ed3cf">
-    <meta name="theme-color" content="#0ed3cf">
-
     <meta property="og:image" content="http://tailwindcomponents.com/storage/6789/conversions/temp97123-ogimage.jpg?v=2023-02-13 00:53:23" />
     <meta property="og:image:width" content="1280" />
     <meta property="og:image:height" content="640" />

@@ -15,13 +15,13 @@
 
             </div>
         </div>
-        <div class="lg:w-1/2 w-full flex items-center justify-center text-center md:px-16 px-0 z-0" style="background-color: #040304;">
+        <div class="lg:w-1/2 w-full flex items-center justify-center text-center md:px-16 px-0 z-0" style="background-color: #000000;">
 
             <div class="w-full py-6 z-20">
                 <h1 id="login-title">LOGIN</h1>
                 <form action="../../account/auth/authenticate.php" method="post" class="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
                     <div class="pb-2 pt-4">
-                        <input type="text" name="username" id="email" placeholder="username..." class="block w-full p-4 text-lg rounded-lg bg-black">
+                        <input type="text" name="username" id="email" placeholder="username..." class="login-input block w-full p-4 text-lg rounded-lg bg-black">
                     </div>
                     <div class="pb-2 pt-4">
                         <input class="block w-full p-4 text-lg rounded-lg bg-black" type="password" name="password" id="password" placeholder="*********">
